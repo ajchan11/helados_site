@@ -3,18 +3,22 @@ $(document).ready(function () {
     
     if (width < 767 ) {
         console.log("Small")
-        $(".carouselText").addClass("clearMe")
         $(".navCustom").addClass("clearMe")
+        $(".carouselText").addClass("clearMe")
+        $(".desktopDrop").addClass("clearMe")
+        $(".hide2").addClass("clearMe")
+        $(".hide3").addClass("clearMe")
     } else {
         $(".hideText").addClass("clearMe")
         $(".hideText").addClass("clearMe")
         $(".hideText").addClass("clearMe")
+        $(".mobileDrop").addClass("clearMe")
         console.log("not small")
         $(".menu-link").addClass("clearMe")
     }
 
     $('.carousel').carousel({
-        interval: 5000000000 //changes the speed
+        interval: 3000 //changes the speed
     })
     
     $('#myCarousel').on('slide.bs.carousel', function (e) {
@@ -23,12 +27,24 @@ $(document).ready(function () {
         if ( f == 0 ) {
             $(".hide1").addClass("hideMe")
             $(".hide2").removeClass("hideMe")
+            if ( width < 767 ) {
+                $(".hide1").addClass("clearMe")
+                $(".hide2").removeClass("clearMe")
+            }
         } else if ( f == 1 ) {
             $(".hide2").addClass("hideMe")
             $(".hide3").removeClass("hideMe")
+            if ( width < 767 ) {
+                $(".hide2").addClass("clearMe")
+                $(".hide3").removeClass("clearMe")
+            }
         } else if ( f == 2 ) {
             $(".hide1").removeClass("hideMe")
             $(".hide3").addClass("hideMe")
+            if ( width < 767 ) {
+                $(".hide1").removeClass("clearMe")
+                $(".hide3").addClass("clearMe")
+            }
         }
     })
     

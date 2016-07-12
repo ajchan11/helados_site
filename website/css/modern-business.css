@@ -24,6 +24,7 @@
 html,
 body {
     height: 100%;
+    background-color: #FFFFFF;
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -31,9 +32,14 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 h1 {
-    font-size: 3em;
-    margin-top: 10px;
+    font-size: 62px;
+    margin-top: 5px;
 }
+
+h5 {
+    color: #a8a8a8;
+}
+
 
 p {
     font-family: HelveticaNeueLTStd;
@@ -52,7 +58,7 @@ p {
 .imgLogo {
     margin-top: 100px;
     max-width: 175px;
-    left: 15%;
+    left: 10%;
     z-index: 999;
     position: absolute;
 }
@@ -66,14 +72,14 @@ p {
 }
 
 .imgStrawberry {
-    margin-top: -40px;
+    top: 10px;
     max-width: 300px;
     left: 55%;
     position: absolute;
 }
 
 .imgPopbox {
-    padding-top: 20px;
+    bottom: 0px;
     width: 100%;
     max-width: 450px;
     left: 50%;
@@ -81,25 +87,26 @@ p {
 }
 
 .imgPineapple {
-    margin-top: -140px;
+    top: 0;
     margin-right: -160px;
     width: 100%;
+    margin-top: -100px;
     max-width: 1000px;
     right: 0;
     position: absolute;
 }
 
 .imgFruitpile {
-    margin-top: -100px;
+    bottom: 10px;
     margin-right: -160px;
     width: 100%;
     max-width: 800px;
-    right: 15%;
+    right: 0;
     position: absolute;
 }
 
 .imgIcebowl {
-    margin-top: -60px;
+    bottom: 10px;
     width: 100%;
     max-width: 380px;
     left: 50%;
@@ -121,6 +128,22 @@ p {
     width: 180px;
 }
 
+.imgStrawberrySplash {
+    max-width: 300px;
+    margin-top: -50px;
+}
+
+.imgProduct {
+    width: 100%;
+}
+
+.imgMilkfruit {
+    right: 0;
+    margin-top: -100px;
+    position: absolute;
+    width: 1000px;
+}
+
 .homeRow {
     padding-top: 30px;
 }
@@ -128,7 +151,7 @@ p {
 /* Home Page Carousel */
 
 div.carousel {
-    height: 60%;
+    height: 485px;
 }
 
 div.carousel .item,
@@ -142,6 +165,11 @@ div.carousel .fill {
     height: 100%;
     background-position: center;
     background-size: cover;
+}
+
+.carouselText {
+    position: absolute;
+    bottom: 10px;
 }
 
 /* 404 Page Styles */
@@ -174,7 +202,7 @@ footer {
 }
 
 .navbar-nav > li > a, .navbar-brand {
-    padding-top:15px !important; 
+    padding-top:10px !important; 
     padding-bottom:0 !important;
     font-family: LithosPro-Bold;
     color: white;
@@ -184,7 +212,7 @@ footer {
 }
 
 .navbar {
-    height: 51px !important;
+    min-height: 40px !important;
 }
 
 .navbar .navbar-collapse {
@@ -195,37 +223,6 @@ footer {
   display: inline-block;
   float: none;
   vertical-align: top;
-}
-
-@media(max-width:767px) {
-    .img-portfolio {
-        margin-bottom: 15px;
-    }
-
-    div.carousel .carousel {
-        height: 70%;
-    }
-    
-    .navbar .navbar-collapse {
-        text-align: left;
-        background-color: orange;
-        margin-top: -2px;
-        width: 100%;
-    }
-    
-    .navCustom {
-        background-image: none;
-    }
-    
-    .imgLogo {
-        max-width: 60px;
-        z-index: 999;
-        position: absolute;
-        right: 10px;
-        margin-top: 10px;
-        left: unset;
-    }
-    
 }
 
 .carousel-indicators {
@@ -263,7 +260,7 @@ footer {
 }
 
 .navbar-nav > li > a, .navbar-brand {
-    padding-bottom: 15px !important;
+    padding-bottom: 10px !important;
 }
 
 .dropdown-menu>li>a:hover {
@@ -282,13 +279,19 @@ p.greenText {
     margin-bottom: 5px;
 }
 
+p.blueText {
+    font-size: 16px;
+    line-height: 1.4;
+    color: #1faeda;
+    margin-bottom: 5px;
+}
+
 .orangeButton {
     background-color: #fc951b;
     border-color: #fc951b;
     font-family: LithosPro-Bold;
     border-radius: 0;
-    padding-right: 60px;
-    padding-left: 60px;
+    width: 100%;
 }
 
 .orangeButton:hover {
@@ -320,15 +323,26 @@ unHideMe {
 .carousel-control.left {
     height: 50px;
     top: 45%;
-    background-image: unset;
-    
+    background-image: none;
+}
+.carousel-control:focus, .carousel-control:hover {
+    background-image: none;
 }
 
 .carousel-control.right {
     height: 50px;
     top: 45%;
-    background-image: unset;
+    background-image: none;
     
+}
+
+.products {
+    margin-top: 50px;
+}
+
+.products h1 {
+    font-size: 54px;
+    color: #1a5287;
 }
 
 .products .open>.dropdown-menu {
@@ -352,4 +366,163 @@ unHideMe {
 
 .products .btn .caret {
     margin: 7px;
+}
+
+.products h5 {
+    font-family: LithosPro-Bold;
+}
+
+.products .productHover {
+    margin-top: -40px;
+    padding-top: 40px;
+}
+
+.products .productHover:hover {
+    background-color: #fedcb4;
+}
+
+.products .productHover h5:hover {
+    color: orange;
+}
+
+.products p {
+    margin-top: 6px;
+    margin-bottom: 6px;
+}
+
+.products .imgLogo {
+    left: 10%;
+    margin-top: 50px;
+}
+
+.customRow:before, 
+.customRow:after {
+    content:"";
+    display: table ;
+    clear:both;
+    background-color: red;
+}
+
+[class*='column-'] {
+    float: left;
+    min-height: 1px; 
+}
+
+.column-1-4{
+    width: 25%; 
+}
+.column-1-3{
+    width: 33.33%; 
+}
+.column-1-2{
+    width: 50%; 
+}
+.column-1{
+    width: 100%;
+}
+
+
+@media(max-width:767px) {
+    h1 {
+        font-size: 28px;
+    }
+    .imgStrawberry {
+        max-width: 300px;
+        left: 40%;
+        margin-top: -50px;
+    }
+    
+    .img-portfolio {
+        margin-bottom: 15px;
+    }
+    
+    .imgMilkfruit {
+        width: 600px;
+    }
+    
+    .imgFruitpile {
+        width: 90%;
+        margin-bottom: -50px;
+        margin-right: -50px;
+    }
+    
+    .imgPineapple {
+        margin-right: -80px;
+        margin-top: unset;
+        width: 80%;
+    }
+    
+    .imgPopbox {
+        max-width: 300px;
+        left: 20%;
+        margin-top: 50px;
+        bottom: unset;
+    }
+    
+    .carousel-caption .popText {
+        margin-top: 100px;
+        left: 5%;
+    }
+    
+    .imgIcebowl {
+        max-width: 380px;
+        left: 20%;
+        margin-bottom: -50px;
+    }
+
+    div.carousel {
+        height: 350px;
+    }
+    
+    div.carousel.smallCarousel {
+        height: 167px;
+    }
+    div.carousel.smallCarousel .captionPage1 {
+        margin-top: 0px;
+    }
+    
+    .navbar .navbar-collapse {
+        text-align: left;
+        background-color: orange;
+        margin-top: -2px;
+        width: 100%;
+    }
+    
+    .navCustom {
+        background-image: none;
+    }
+    
+    .imgLogo {
+        max-width: 60px;
+        z-index: 999;
+        position: absolute;
+        right: 10px;
+        margin-top: 10px;
+        left: unset;
+    }
+    
+    .products .imgLogo {
+        max-width: 60px;
+        z-index: 999;
+        position: absolute;
+        right: 10px;
+        margin-top: -20px;
+        left: unset;
+    }
+    
+    .extraMargin {
+        margin: 30px;
+    }
+    
+    .products .extraRow {
+        margin-top: 20px;
+    }
+    
+    .homeRow {
+        padding-top: 0px;
+    }
+    
+    .carousel-caption {
+        left: 5%;
+    }
 }

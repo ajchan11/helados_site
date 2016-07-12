@@ -17,8 +17,7 @@
     <!-- Custom CSS -->
     <link href="css/modern-business.css" rel="stylesheet">
 
-    <!-- Custom Fonts -->
-    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/sidemenu.css">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -33,19 +32,12 @@
 
     <!-- Navigation -->
     <nav class="navbar navCustom navbar-fixed-top" role="navigation">
-        <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-            </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
+                    <li>
+                        <a href="index.html">HOME</a>
+                    </li>
                     <li>
                         <a href="distributors.html">DISTRIBUTORS</a>
                     </li>
@@ -56,8 +48,11 @@
                         <a href="products.html">PRODUCTS</a>
                     </li>
                     <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">OUR STORY</a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">ABOUT US</a>
                         <ul class="dropdown-menu">
+                            <li>
+                                <a href="story.html">OUR STORY</a>
+                            </li>
                             <li>
                                 <a href="history.html">HISTORY</a>
                             </li>
@@ -72,13 +67,55 @@
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container -->
     </nav>
+    
+<nav id="menu" style="color: black;">
+    <ul class="mobile-nav" id="mobile">
+
+        <li class="menu-item">
+            <a href="index.html">HOME</a>
+        </li>
+        
+        <li class="menu-item">
+            <a href="distributors.html">DISTRIBUTORS</a>
+        </li>
+
+        <li class="menu-item">
+            <a href="buy.html">WHERE TO BUY</a>
+        </li>
+
+        <li class="menu-item">
+            <a href="products.html">PRODUCTS</a>
+        </li>
+        
+        <li class="menu-item">
+            <a href="story.html">OUR STORY</a>
+        </li>
+
+        <li class="menu-item">
+            <a href="history.html">HISTORY</a>
+        </li>
+
+        <li class="menu-item">
+            <a href="ingredients.html">AUTHENTIC INGREDIENTS</a>
+        </li>
+        
+        <li class="menu-item">
+            <a href="contact.html">GET IN TOUCH</a>
+        </li>
+    </ul>
+</nav>
+
+<div class="container">
+    <a class="menu-btn menu-link" href="#menu" id="nav-icon">
+      <span></span>
+      <span></span> 
+      <span></span>
+    </a>
 
     <!-- Header Carousel -->
-    <header id="myCarousel" class="carousel slide">
-
+    <div id="myCarousel" class="carousel slide smallCarousel">
+        <img class="imgLogo" src="img/logo.png" alt="">
         <!-- Wrapper for slides -->
         <div class="carousel-inner">
             <div class="item active">
@@ -96,10 +133,10 @@
                 </div>
             </div>
         </div>
-    </header>
+    </div>
 
     <!-- Page Content -->
-    <div class="container">
+    <div class="extraMargin">
         <div class="row text-center homeRow">
             <div class="col-sm-3"></div>
             <div class="col-sm-6 text-left">
@@ -112,6 +149,9 @@
                 <p>
                     At Tropicale, we only use real milks and creams. And they’re never air-whipped for mass production  like other paleta pretenders. That’s because only gentle blending can deliver the traditional  velvety texture and unmatched taste of Helados products.
                 </p>
+                <div class="pull-right">
+                    <img class="imgStrawberrySplash" src="img/strawberry-splash.jpg" alt="">
+                </div>
             </div>
             <div class="col-sm-3"></div>
         </div>
@@ -127,6 +167,8 @@
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
 
+    <!-- Extra JS -->
+    <script src="js/main.js"></script>
 
 </body>
 
